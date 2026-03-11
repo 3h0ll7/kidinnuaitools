@@ -95,10 +95,45 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 text-center border-t border-border/30">
-        <p className="text-muted-foreground">
-          &copy; 2024 Kidinnu. جميع الحقوق محفوظة.
-        </p>
+      <footer className="py-12 border-t border-border/30">
+        <div className="container mx-auto px-6 flex flex-col items-center gap-6">
+          <div className="flex gap-4">
+            {[
+              { icon: Instagram, href: 'https://instagram.com/staiiq', label: 'Instagram' },
+              { icon: Twitter, href: 'https://twitter.com/3h0ll7', label: 'X / Twitter' },
+              { icon: Github, href: 'https://github.com/3h0ll7', label: 'GitHub' },
+              { icon: Youtube, href: 'https://youtube.com/@stai9', label: 'YouTube' },
+              { icon: Facebook, href: 'https://www.facebook.com/share/1SXTmx3Zcj/', label: 'Facebook' },
+            ].map(({ icon: Icon, href, label }) => (
+              <motion.a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                whileHover={{ scale: 1.2, y: -3 }}
+                whileTap={{ scale: 0.9 }}
+                className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors"
+              >
+                <Icon className="w-5 h-5" />
+              </motion.a>
+            ))}
+            <motion.a
+              href="https://linktr.ee/3h0ll"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok"
+              whileHover={{ scale: 1.2, y: -3 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors text-sm font-bold"
+            >
+              TT
+            </motion.a>
+          </div>
+          <p className="text-muted-foreground text-sm">
+            &copy; 2024 Kidinnu. جميع الحقوق محفوظة.
+          </p>
+        </div>
       </footer>
     </div>
   );
