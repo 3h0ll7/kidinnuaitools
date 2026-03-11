@@ -3,7 +3,9 @@ import { Button } from '@/components/ui/button';
 import { 
   Layers, Megaphone, Palette, Code, Shield, GraduationCap, 
   FlaskConical, Stethoscope, Scale, Building2, FolderKanban, 
-  Users, Calculator 
+  Users, Calculator, Heart, Microscope, Pill, SmilePlus,
+  Camera, TrendingUp, Languages, Music, PenTool, ShoppingCart,
+  Wheat, BookOpen, Plane, Sofa, Leaf
 } from 'lucide-react';
 
 const categoryIcons: Record<string, React.ReactNode> = {
@@ -20,6 +22,21 @@ const categoryIcons: Record<string, React.ReactNode> = {
   'لمديري المشاريع': <FolderKanban className="w-4 h-4" />,
   'لأخصائيي الموارد البشرية': <Users className="w-4 h-4" />,
   'للمحاسبين': <Calculator className="w-4 h-4" />,
+  'للتمريض': <Heart className="w-4 h-4" />,
+  'للمختبرات الطبية': <Microscope className="w-4 h-4" />,
+  'للصيدلة': <Pill className="w-4 h-4" />,
+  'لأطباء الأسنان': <SmilePlus className="w-4 h-4" />,
+  'للمصورين': <Camera className="w-4 h-4" />,
+  'للمستثمرين والمحللين الماليين': <TrendingUp className="w-4 h-4" />,
+  'للمترجمين ولغويين': <Languages className="w-4 h-4" />,
+  'للموسيقيين والملحنين': <Music className="w-4 h-4" />,
+  'للصحفيين والكتاب': <PenTool className="w-4 h-4" />,
+  'للعاملين في مجال التجارة الإلكترونية': <ShoppingCart className="w-4 h-4" />,
+  'للمزارعين والعاملين في القطاع الزراعي': <Wheat className="w-4 h-4" />,
+  'للمعلمين اللغويين ومدرسي اللغات': <BookOpen className="w-4 h-4" />,
+  'للمسافرين ووكالات السفر': <Plane className="w-4 h-4" />,
+  'للمصممين الداخليين ومهندسي الديكور': <Sofa className="w-4 h-4" />,
+  'لعلماء البيئة والمتخصصين في الاستدامة': <Leaf className="w-4 h-4" />,
 };
 
 interface FilterButtonProps {
