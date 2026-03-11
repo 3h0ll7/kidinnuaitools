@@ -148,10 +148,114 @@ export const aiToolsData: AITool[] = [
   { name: "Auditoria.AI", url: "https://www.auditoria.ai/", logo: "https://logo.clearbit.com/auditoria.ai", description: "لأتمتة المهام المالية المتكررة في الحسابات الدائنة والمدينة.", category: "للمحاسبين", pricing: "مدفوع", arabic_support: "لا" },
   { name: "Docyt", url: "https://docyt.com/", logo: "https://logo.clearbit.com/docyt.com", description: "محرك محاسبة يعمل بالذكاء الاصطناعي لأتمتة مسك الدفاتر.", category: "للمحاسبين", pricing: "مدفوع", arabic_support: "لا" },
   { name: "Zeni", url: "https://www.zeni.ai/", logo: "https://logo.clearbit.com/zeni.ai", description: "خدمة مالية شاملة تستخدم الذكاء الاصطناعي لإدارة الشؤون المالية.", category: "للمحاسبين", pricing: "مدفوع", arabic_support: "لا" },
-  { name: "Indy", url: "https://indy.com/", logo: "https://logo.clearbit.com/indy.com", description: "منصة متكاملة للمستقلين تتضمن أدوات فواتير ومحاسبة ذكية.", category: "للمحاسبين", pricing: "مدفوع", arabic_support: "لا" }
+  { name: "Indy", url: "https://indy.com/", logo: "https://logo.clearbit.com/indy.com", description: "منصة متكاملة للمستقلين تتضمن أدوات فواتير ومحاسبة ذكية.", category: "للمحاسبين", pricing: "مدفوع", arabic_support: "لا" },
+
+  // للتمريض 🩺
+  { name: "NurseGrid", url: "https://www.nursegrid.com/", logo: "https://logo.clearbit.com/nursegrid.com", description: "منصة ذكية لإدارة جداول العمل والمهام للممرضين.", category: "للتمريض", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Care.ai", url: "https://care.ai/", logo: "https://logo.clearbit.com/care.ai", description: "نظام مراقبة ذكي للمرضى باستخدام أجهزة الاستشعار والذكاء الاصطناعي.", category: "للتمريض", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Kepler Nurse", url: "https://www.kepler.co/", logo: "https://logo.clearbit.com/kepler.co", description: "مساعد افتراضي للممرضين لتوثيق الرعاية وتحسين سير العمل.", category: "للتمريض", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "TigerConnect", url: "https://www.tigerconnect.com/", logo: "https://logo.clearbit.com/tigerconnect.com", description: "منصة تواصل آمنة للفرق الطبية مع تحليلات ذكية.", category: "للتمريض", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "NurseMind", url: "https://www.nursemind.com/", logo: "https://logo.clearbit.com/nursemind.com", description: "أداة ذكاء اصطناعي لتحليل بيانات المرضى وتقديم توصيات الرعاية.", category: "للتمريض", pricing: "مدفوع", arabic_support: "لا" },
+
+  // للمختبرات الطبية 🔬
+  { name: "Proscia", url: "https://www.proscia.com/", logo: "https://logo.clearbit.com/proscia.com", description: "منصة تحليل رقمي لعلم الأمراض باستخدام الذكاء الاصطناعي.", category: "للمختبرات الطبية", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "PathAI Lab", url: "https://www.pathai.com/", logo: "https://logo.clearbit.com/pathai.com", description: "تحليل شرائح الأنسجة بدقة عالية وتحديد التشوهات.", category: "للمختبرات الطبية", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Lunit Insight", url: "https://www.lunit.io/", logo: "https://logo.clearbit.com/lunit.io", description: "تحليل صور الأشعة السينية والطباعية بدقة غير مسبوقة.", category: "للمختبرات الطبية", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Aidoc Lab", url: "https://www.aidoc.com/", logo: "https://logo.clearbit.com/aidoc.com", description: "تحليل نتائج المختبرات وتحديد الحالات الطارئة تلقائيًا.", category: "للمختبرات الطبية", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Paige AI", url: "https://www.paige.ai/", logo: "https://logo.clearbit.com/paige.ai", description: "منصة تشخيص سرطان البروستاتا باستخدام الذكاء الاصطناعي.", category: "للمختبرات الطبية", pricing: "مدفوع", arabic_support: "لا" },
+
+  // للصيدلة 💊
+  { name: "PharmEasy", url: "https://pharmeasy.in/", logo: "https://logo.clearbit.com/pharmeasy.in", description: "منصة ذكية لإدارة الصيدليات وتحليل الوصفات الطبية.", category: "للصيدلة", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+  { name: "Rx.ai", url: "https://www.rx.ai/", logo: "https://logo.clearbit.com/rx.ai", description: "كشف التفاعلات الدوائية وتحسين سلامة الأدوية.", category: "للصيدلة", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "PharmaEngine", url: "https://www.pharmaengine.com/", logo: "https://logo.clearbit.com/pharmaengine.com", description: "تحليل البيانات الدوائية وتحسين فعالية العلاجات.", category: "للصيدلة", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "CureMetrix", url: "https://www.curemetrix.com/", logo: "https://logo.clearbit.com/curemetrix.com", description: "تحليل الصور الطبية لتشخيص الأمراض بدقة.", category: "للصيدلة", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Pharma Intelligence", url: "https://www.pharmaintelligence.informa.com/", logo: "https://logo.clearbit.com/informa.com", description: "تحليلات ذكية لصناعة الأدوية وتطوراتها.", category: "للصيدلة", pricing: "مدفوع", arabic_support: "لا" },
+
+  // لأطباء الأسنان 🦷
+  { name: "Overjet", url: "https://www.overjet.ai/", logo: "https://logo.clearbit.com/overjet.ai", description: "تحليل صور الأشعة السينية للأسنان وتحديد المشاكل.", category: "لأطباء الأسنان", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "VideaHealth", url: "https://www.videahealth.com/", logo: "https://logo.clearbit.com/videahealth.com", description: "منصة ذكاء اصطناعي لتشخيص أمراض اللثة والأسنان.", category: "لأطباء الأسنان", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "DentalMonitoring", url: "https://www.dentalmonitoring.com/", logo: "https://logo.clearbit.com/dentalmonitoring.com", description: "مراقبة تقدم علاجات تقويم الأسنان عن بعد.", category: "لأطباء الأسنان", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Denti.AI", url: "https://denti.ai/", logo: "https://logo.clearbit.com/denti.ai", description: "تخطيط علاجات الأسنان وتصميم الأجهزة التقويمية.", category: "لأطباء الأسنان", pricing: "مدفوع", arabic_support: "لا" },
+
+  // للمصورين 📸
+  { name: "Luminar Neo", url: "https://skylum.com/luminar", logo: "https://logo.clearbit.com/skylum.com", description: "برنامج تحرير صور متطور باستخدام الذكاء الاصطناعي.", category: "للمصورين", pricing: "مدفوع", arabic_support: "نعم" },
+  { name: "Adobe Photoshop AI", url: "https://www.adobe.com/products/photoshop.html", logo: "https://logo.clearbit.com/adobe.com", description: "أدوات ذكاء اصطناعي متقدمة لتحرير الصور الاحترافية.", category: "للمصورين", pricing: "مدفوع", arabic_support: "نعم" },
+  { name: "Topaz Labs", url: "https://topazlabs.com/", logo: "https://logo.clearbit.com/topazlabs.com", description: "تحسين جودة الصور وتقليل الضوضاء باستخدام الذكاء الاصطناعي.", category: "للمصورين", pricing: "مدفوع", arabic_support: "نعم" },
+  { name: "Runway ML", url: "https://runwayml.com/", logo: "https://logo.clearbit.com/runwayml.com", description: "منصة إبداعية لتعديل الفيديو والصور بالذكاء الاصطناعي.", category: "للمصورين", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+  { name: "Pixelmator Pro", url: "https://www.pixelmator.com/pro/", logo: "https://logo.clearbit.com/pixelmator.com", description: "تحرير صور احترافي مع أدوات ذكاء اصطناعي متقدمة.", category: "للمصورين", pricing: "مدفوع", arabic_support: "نعم" },
+
+  // للمستثمرين والمحللين الماليين 📈
+  { name: "Bloomberg Terminal", url: "https://www.bloomberg.com/professional/", logo: "https://logo.clearbit.com/bloomberg.com", description: "منصة متكاملة للتحليل المالي والتنبؤ بالأسواق المالية.", category: "للمستثمرين والمحللين الماليين", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Kensho", url: "https://www.kensho.com/", logo: "https://logo.clearbit.com/kensho.com", description: "محرك تحليل ذكي للبيانات المالية وتنبؤات السوق.", category: "للمستثمرين والمحللين الماليين", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "AlphaSense", url: "https://www.alphasense.com/", logo: "https://logo.clearbit.com/alphasense.com", description: "منصة بحث ذكية للبيانات المالية وأبحاث السوق.", category: "للمستثمرين والمحللين الماليين", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Kavout", url: "https://www.kavout.com/", logo: "https://logo.clearbit.com/kavout.com", description: "منصة ذكاء اصطناعي للاستثمار الكمي وتحليل الأسهم.", category: "للمستثمرين والمحللين الماليين", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Trade Ideas", url: "https://www.tradeideas.com/", logo: "https://logo.clearbit.com/tradeideas.com", description: "مساعد تداول ذكي يقدم إشارات تداول بناءً على تحليل السوق.", category: "للمستثمرين والمحللين الماليين", pricing: "مدفوع", arabic_support: "لا" },
+
+  // للمترجمين ولغويين 🌍
+  { name: "DeepL", url: "https://www.deepl.com/translator", logo: "https://logo.clearbit.com/deepl.com", description: "محرك ترجمة دقيق يدعم العديد من اللغات واللهجات.", category: "للمترجمين ولغويين", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+  { name: "Google Translate", url: "https://translate.google.com/", logo: "https://logo.clearbit.com/google.com", description: "أداة ترجمة مجانية تدعم أكثر من 100 لغة.", category: "للمترجمين ولغويين", pricing: "مجاني", arabic_support: "نعم" },
+  { name: "Unbabel", url: "https://unbabel.com/", logo: "https://logo.clearbit.com/unbabel.com", description: "منصة ترجمة تجمع بين الذكاء الاصطناعي والمترجمين البشر.", category: "للمترجمين ولغويين", pricing: "مدفوع", arabic_support: "نعم" },
+  { name: "Smartling", url: "https://www.smartling.com/", logo: "https://logo.clearbit.com/smartling.com", description: "منصة ترجمة وإدارة محتوى متعددة اللغات.", category: "للمترجمين ولغويين", pricing: "مدفوع", arabic_support: "نعم" },
+  { name: "Systran", url: "https://www.systransoft.com/", logo: "https://logo.clearbit.com/systransoft.com", description: "حلول ترجمة ذكية للمؤسسات والأفراد.", category: "للمترجمين ولغويين", pricing: "مدفوع", arabic_support: "نعم" },
+
+  // للموسيقيين والملحنين 🎵
+  { name: "Amper Music", url: "https://www.permusic.com/", logo: "https://logo.clearbit.com/permusic.com", description: "لإنشاء موسيقى أصلية مخصصة للمشاريع الإبداعية.", category: "للموسيقيين والملحنين", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "AIVA", url: "https://www.aiva.ai/", logo: "https://logo.clearbit.com/aiva.ai", description: "ملحن ذكاء اصطناعي لإنشاء موسيقى عاطفية للأفلام والألعاب.", category: "للموسيقيين والملحنين", pricing: "مجاني/مدفوع", arabic_support: "لا" },
+  { name: "Soundraw", url: "https://soundraw.com/", logo: "https://logo.clearbit.com/soundraw.com", description: "لإنشاء موسيقى بدون حقوق ملكية للفيديوهات والبودكاست.", category: "للموسيقيين والملحنين", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "LANDR", url: "https://www.landr.com/", logo: "https://logo.clearbit.com/landr.com", description: "لإتقان الصوت وإتقان الموسيقى باستخدام الذكاء الاصطناعي.", category: "للموسيقيين والملحنين", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Moises.ai", url: "https://moises.ai/", logo: "https://logo.clearbit.com/moises.ai", description: "لفصل الآلات الموسيقية والصوت عن الأغاني.", category: "للموسيقيين والملحنين", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+
+  // للصحفيين والكتاب ✍️
+  { name: "Grammarly", url: "https://www.grammarly.com/", logo: "https://logo.clearbit.com/grammarly.com", description: "لتحسين الكتابة وتصحيح الأخطاء النحوية والأسلوبية.", category: "للصحفيين والكتاب", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+  { name: "Hemingway Editor", url: "https://hemingwayapp.com/", logo: "https://logo.clearbit.com/hemingwayapp.com", description: "لتحسين أسلوب الكتابة وجعلها أكثر وضوحًا.", category: "للصحفيين والكتاب", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+  { name: "Wordsmith", url: "https://www.automatedinsights.com/wordsmith/", logo: "https://logo.clearbit.com/automatedinsights.com", description: "لإنشاء تقارير ومقالات إخبارية بشكل آلي.", category: "للصحفيين والكتاب", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "QuillBot", url: "https://quillbot.com/", logo: "https://logo.clearbit.com/quillbot.com", description: "لإعادة صياغة النصوص وتحسين جودة المحتوى.", category: "للصحفيين والكتاب", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+  { name: "Article Forge", url: "https://www.articleforge.com/", logo: "https://logo.clearbit.com/articleforge.com", description: "لكتابة مقالات فريدة ومنظمة بشكل آلي.", category: "للصحفيين والكتاب", pricing: "مدفوع", arabic_support: "لا" },
+
+  // للعاملين في مجال التجارة الإلكترونية 🛒
+  { name: "Shopify Kit", url: "https://www.shopify.com/kit", logo: "https://logo.clearbit.com/shopify.com", description: "مساعد تسويق ذكي لمتاجر التجارة الإلكترونية.", category: "للعاملين في مجال التجارة الإلكترونية", pricing: "مدفوع", arabic_support: "نعم" },
+  { name: "Octane AI", url: "https://octaneai.com/", logo: "https://logo.clearbit.com/octaneai.com", description: "لإنشاء روبوتات محادثة ذكية لمتاجر التجارة الإلكترونية.", category: "للعاملين في مجال التجارة الإلكترونية", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Granify", url: "https://www.granify.com/", logo: "https://logo.clearbit.com/granify.com", description: "لزيادة المبيعات من خلال تحسين تجربة التسوق.", category: "للعاملين في مجال التجارة الإلكترونية", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Vue.ai", url: "https://www.vue.ai/", logo: "https://logo.clearbit.com/vue.ai", description: "لتحسين الصور المنتجات وتخصيص تجربة التسوق.", category: "للعاملين في مجال التجارة الإلكترونية", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Syte", url: "https://www.syte.ai/", logo: "https://logo.clearbit.com/syte.ai", description: "لتقديم توصيات منتجات ذكية وتحسين تجربة المستخدم.", category: "للعاملين في مجال التجارة الإلكترونية", pricing: "مدفوع", arabic_support: "لا" },
+
+  // للمزارعين والعاملين في القطاع الزراعي 🌾
+  { name: "Blue River Technology", url: "https://www.bluerivertechnology.com/", logo: "https://logo.clearbit.com/bluerivertechnology.com", description: "للتحكم الدقيق في الأعشاب الضارة في المزارع.", category: "للمزارعين والعاملين في القطاع الزراعي", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Prospera", url: "https://www.prospera.ag/", logo: "https://logo.clearbit.com/prospera.ag", description: "لرصد صحة المحاصيل وتحليل بيانات المزارع.", category: "للمزارعين والعاملين في القطاع الزراعي", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Taranis", url: "https://www.taranis.com/", logo: "https://logo.clearbit.com/taranis.com", description: "لرصد صحة المحاصيل باستخدام الطائرات بدون طيار.", category: "للمزارعين والعاملين في القطاع الزراعي", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "FarmBot", url: "https://farm.bot/", logo: "https://logo.clearbit.com/farm.bot", description: "روبوت زراعي ذكي لزراعة الحدائق والمزارع الصغيرة.", category: "للمزارعين والعاملين في القطاع الزراعي", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "CropX", url: "https://www.cropx.com/", logo: "https://logo.clearbit.com/cropx.com", description: "لإدارة الري الزراعي الذكي وتحليل التربة.", category: "للمزارعين والعاملين في القطاع الزراعي", pricing: "مدفوع", arabic_support: "لا" },
+
+  // للمعلمين اللغويين ومدرسي اللغات 📚
+  { name: "Duolingo", url: "https://www.duolingo.com/", logo: "https://logo.clearbit.com/duolingo.com", description: "لتعلم اللغات بطريقة تفاعلية ومخصصة.", category: "للمعلمين اللغويين ومدرسي اللغات", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+  { name: "Babbel", url: "https://www.babbel.com/", logo: "https://logo.clearbit.com/babbel.com", description: "لتعلم اللغات العملية والمحادثات اليومية.", category: "للمعلمين اللغويين ومدرسي اللغات", pricing: "مدفوع", arabic_support: "نعم" },
+  { name: "Rosetta Stone", url: "https://www.rosettastone.com/", logo: "https://logo.clearbit.com/rosettastone.com", description: "لتعلم اللغات بطريقة الغمر والتفاعل المباشر.", category: "للمعلمين اللغويين ومدرسي اللغات", pricing: "مدفوع", arabic_support: "نعم" },
+  { name: "Lingvist", url: "https://lingvist.com/", logo: "https://logo.clearbit.com/lingvist.com", description: "لتسريع تعلم اللغات باستخدام الذكاء الاصطناعي.", category: "للمعلمين اللغويين ومدرسي اللغات", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "ELSA Speak", url: "https://www.elsaspeak.com/", logo: "https://logo.clearbit.com/elsaspeak.com", description: "لتحسين النطق واللهجة في اللغة الإنجليزية.", category: "للمعلمين اللغويين ومدرسي اللغات", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+
+  // للمسافرين ووكالات السفر ✈️
+  { name: "Hopper", url: "https://www.hopper.com/", logo: "https://logo.clearbit.com/hopper.com", description: "للتنبؤ بأفضل وقت لحجز تذاكر الطيران والفنادق.", category: "للمسافرين ووكالات السفر", pricing: "مجاني", arabic_support: "نعم" },
+  { name: "Kayak", url: "https://www.kayak.com/", logo: "https://logo.clearbit.com/kayak.com", description: "لمقارنة أسعار السفر والعثور على أفضل الصفقات.", category: "للمسافرين ووكالات السفر", pricing: "مجاني", arabic_support: "نعم" },
+  { name: "Skyscanner", url: "https://www.skyscanner.net/", logo: "https://logo.clearbit.com/skyscanner.net", description: "لبحث ومقارنة تذاكر الطيران والفنادق وتأجير السيارات.", category: "للمسافرين ووكالات السفر", pricing: "مجاني", arabic_support: "نعم" },
+  { name: "Lola", url: "https://www.lolatravel.com/", logo: "https://logo.clearbit.com/lolatravel.com", description: "للتخطيط للرحلات وحجزها بمساعدة الذكاء الاصطناعي.", category: "للمسافرين ووكالات السفر", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Utrip", url: "https://www.utrip.com/", logo: "https://logo.clearbit.com/utrip.com", description: "للتخطيط لرحلات مخصصة بناءً على اهتمامات المسافر.", category: "للمسافرين ووكالات السفر", pricing: "مجاني", arabic_support: "نعم" },
+
+  // للمصممين الداخليين ومهندسي الديكور 🏠
+  { name: "Houzz", url: "https://www.houzz.com/", logo: "https://logo.clearbit.com/houzz.com", description: "للإلهام بالتصاميم الداخلية والعثور على محترفين.", category: "للمصممين الداخليين ومهندسي الديكور", pricing: "مجاني", arabic_support: "نعم" },
+  { name: "Modsy", url: "https://www.modsy.com/", logo: "https://logo.clearbit.com/modsy.com", description: "لتصميم الديكور الداخلي ثلاثي الأبعاد.", category: "للمصممين الداخليين ومهندسي الديكور", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Planner 5D", url: "https://planner5d.com/", logo: "https://logo.clearbit.com/planner5d.com", description: "لإنشاء تصاميم داخلية وخارجية في ثنائي وثلاثي الأبعاد.", category: "للمصممين الداخليين ومهندسي الديكور", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+  { name: "Homestyler", url: "https://www.homestyler.com/", logo: "https://logo.clearbit.com/homestyler.com", description: "لتصميم وتصور الديكور الداخلي بشكل احترافي.", category: "للمصممين الداخليين ومهندسي الديكور", pricing: "مجاني/مدفوع", arabic_support: "نعم" },
+  { name: "RoomGPT", url: "https://roomgpt.io/", logo: "https://logo.clearbit.com/roomgpt.io", description: "لتوليد تصاميم داخلية بناءً على صور الغرف.", category: "للمصممين الداخليين ومهندسي الديكور", pricing: "مجاني", arabic_support: "لا" },
+
+  // لعلماء البيئة والمتخصصين في الاستدامة 🌿
+  { name: "ClimateAI", url: "https://www.climate.ai/", logo: "https://logo.clearbit.com/climate.ai", description: "لتحليل تأثير التغير المناخي على الزراعة والغذاء.", category: "لعلماء البيئة والمتخصصين في الاستدامة", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "SilviaTerra", url: "https://www.silviaterra.com/", logo: "https://logo.clearbit.com/silviaterra.com", description: "لتحليل ورصد الغابات باستخدام الذكاء الاصطناعي.", category: "لعلماء البيئة والمتخصصين في الاستدامة", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Descartes Labs", url: "https://www.descarteslabs.com/", logo: "https://logo.clearbit.com/descarteslabs.com", description: "لتحليل صور الأقمار الصناعية لمراقبة الأرض.", category: "لعلماء البيئة والمتخصصين في الاستدامة", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Orbital Insight", url: "https://www.orbitalinsight.com/", logo: "https://logo.clearbit.com/orbitalinsight.com", description: "لتحليل بيانات الأقمار الصناعية لفهم الأنشطة البشرية.", category: "لعلماء البيئة والمتخصصين في الاستدامة", pricing: "مدفوع", arabic_support: "لا" },
+  { name: "Blue Marble", url: "https://www.bluemarble.com/", logo: "https://logo.clearbit.com/bluemarble.com", description: "لمحاكاة تأثير المشاريع على البيئة والمناخ.", category: "لعلماء البيئة والمتخصصين في الاستدامة", pricing: "مدفوع", arabic_support: "لا" }
 ];
 
-export const categoryIntros = {
+export const categoryIntros: Record<string, string> = {
   "للمسوقين": "يقدم الذكاء الاصطناعي للمسوقين القدرة على تحليل كميات هائلة من البيانات، وتخصيص الحملات التسويقية، وأتمتة المهام المتكررة، مما يؤدي إلى استهداف أكثر فعالية وزيادة عائد الاستثمار.",
   "للمصممين": "أدوات الذكاء الاصطناعي تساعد المصممين على تسريع عمليات التصميم، وتوليد أفكار إبداعية جديدة، وأتمتة المهام الروتينية مثل إزالة الخلفيات أو تحسين جودة الصور.",
   "للمبرمجين": "يُمكن للذكاء الاصطناعي مساعدة المبرمجين في كتابة الأكواد بشكل أسرع، واكتشاف الأخطاء وإصلاحها، وتقديم اقتراحات لتحسين جودة الكود وأمانه.",
@@ -162,6 +266,21 @@ export const categoryIntros = {
   "للمحامين": "تساعد أدوات الذكاء الاصطناعي المحامين في تسريع عملية البحث القانوني، ومراجعة العقود، وتحليل كميات هائلة من المستندات، والتنبؤ بنتائج القضايا.",
   "للمهندسين المعماريين": "يستخدم المهندسون المعماريون الذكاء الاصطناعي في التصميم التوليدي، وتحسين استدامة المباني، وأتمتة إنشاء الرسومات، ومحاكاة أداء المباني في مراحل مبكرة.",
   "لمديري المشاريع": "يعمل الذكاء الاصطناعي على أتمتة جدولة المهام، وتخصيص الموارد، والتنبؤ بالمخاطر، وتحسين التواصل بين أعضاء الفريق، مما يضمن سير المشاريع بسلاسة وكفاءة.",
-  "لأخصائيي الموارد البشرية": "يُستخدم الذكاء الاصطناعي في فحص السير الذاتية، وتحليل مشاعر الموظفين، وتخصيص برامج التدريب، وأتمتة الرد على استفسارات الموظفين الشائعة، مما يحسن من كفاءة عمليات الموارد البشرية.",
-  "للمحاسبين": "يمكن للمحاسبين الاستفادة من الذكاء الاصطناعي في أتمتة إدخال البيانات، وتصنيف المعاملات، واكتشاف الاحتيال، وإعداد التقارير المالية، وتحليل البيانات للتنبؤ بالاتجاهات المالية."
+  "لأخصائيي الموارد البشرية": "يُستخدم الذكاء الاصطناعي في فحص السير الذاتية، وتحليل مشاعر الموظفين، وتخصيص برامج التدريب، وأتمتة الرد على استفسارات الموظفين الشائعة.",
+  "للمحاسبين": "يمكن للمحاسبين الاستفادة من الذكاء الاصطناعي في أتمتة إدخال البيانات، وتصنيف المعاملات، واكتشاف الاحتيال، وإعداد التقارير المالية.",
+  "للتمريض": "يساعد الذكاء الاصطناعي الممرضين في إدارة جداول العمل، ومراقبة المرضى، وتوثيق الرعاية، وتحسين سير العمل اليومي في المستشفيات.",
+  "للمختبرات الطبية": "يُستخدم الذكاء الاصطناعي في تحليل العينات المخبرية، وتشخيص الأمراض بدقة عالية، وتحديد التشوهات في الأنسجة والصور الطبية.",
+  "للصيدلة": "تساعد أدوات الذكاء الاصطناعي الصيادلة في كشف التفاعلات الدوائية، وإدارة الوصفات الطبية، وتحسين سلامة الأدوية.",
+  "لأطباء الأسنان": "يُمكن للذكاء الاصطناعي مساعدة أطباء الأسنان في تحليل صور الأشعة، وتشخيص أمراض اللثة والأسنان، ومراقبة تقدم العلاجات.",
+  "للمصورين": "أدوات الذكاء الاصطناعي تساعد المصورين في تحرير الصور، وتحسين الجودة، وتقليل الضوضاء، وإضافة تأثيرات إبداعية متقدمة.",
+  "للمستثمرين والمحللين الماليين": "يساعد الذكاء الاصطناعي المستثمرين في تحليل الأسواق المالية، والتنبؤ بالاتجاهات، وتقديم إشارات تداول ذكية.",
+  "للمترجمين ولغويين": "تُحدث أدوات الترجمة بالذكاء الاصطناعي ثورة في عمل المترجمين واللغويين من خلال ترجمات أكثر دقة وسرعة.",
+  "للموسيقيين والملحنين": "يُمكن للذكاء الاصطناعي مساعدة الموسيقيين في إنشاء ألحان جديدة، وإتقان الصوت، وفصل الآلات الموسيقية.",
+  "للصحفيين والكتاب": "يساعد الذكاء الاصطناعي الكتاب والصحفيين في تحسين الكتابة، وإعادة الصياغة، وإنشاء محتوى عالي الجودة بشكل أسرع.",
+  "للعاملين في مجال التجارة الإلكترونية": "يُستخدم الذكاء الاصطناعي لتحسين تجربة التسوق، وزيادة المبيعات، وتقديم توصيات منتجات مخصصة.",
+  "للمزارعين والعاملين في القطاع الزراعي": "يساعد الذكاء الاصطناعي المزارعين في رصد صحة المحاصيل، وإدارة الري الذكي، ومكافحة الأعشاب الضارة.",
+  "للمعلمين اللغويين ومدرسي اللغات": "تُمكّن أدوات الذكاء الاصطناعي مدرسي اللغات من تقديم تجارب تعلم تفاعلية ومخصصة لكل طالب.",
+  "للمسافرين ووكالات السفر": "يساعد الذكاء الاصطناعي المسافرين في التخطيط للرحلات، ومقارنة الأسعار، والعثور على أفضل العروض.",
+  "للمصممين الداخليين ومهندسي الديكور": "يُمكن للذكاء الاصطناعي مساعدة مصممي الديكور في تصور التصاميم الداخلية وإنشاء نماذج ثلاثية الأبعاد.",
+  "لعلماء البيئة والمتخصصين في الاستدامة": "يساعد الذكاء الاصطناعي علماء البيئة في تحليل بيانات المناخ، ورصد الغابات، ومراقبة التغيرات البيئية."
 };
