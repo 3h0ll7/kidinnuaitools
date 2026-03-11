@@ -70,8 +70,3 @@ export const FilterButton = ({ category, isActive, onClick, index }: FilterButto
     </motion.div>
   );
 };
-        <span className="relative z-10">{category}</span>
-      </Button>
-    </motion.div>
-  );
-};
