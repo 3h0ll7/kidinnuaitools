@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { Instagram, Twitter, Github, Youtube, Facebook } from 'lucide-react';
 import { Hero3D } from '@/components/Hero3D';
 import { SearchBar } from '@/components/SearchBar';
 import { FilterButton } from '@/components/FilterButton';
