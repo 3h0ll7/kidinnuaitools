@@ -165,7 +165,7 @@ export const Hero3D = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          دليلك الشامل لأكثر من <span className="text-primary font-bold">100 أداة</span> مصنفة بعناية، 
+          دليلك الشامل لأكثر من <span className="text-primary font-bold">{aiToolsData.length} أداة</span> مصنفة بعناية، 
           لتعزيز إنتاجيتك وإطلاق العنان لإبداعك
         </motion.p>
 
