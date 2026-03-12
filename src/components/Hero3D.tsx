@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import heroBackground from '@/assets/hero-bg.jpg';
+import { aiToolsData } from '@/data/aiToolsData';
 
 export const Hero3D = () => {
   const containerRef = useRef<HTMLDivElement>(null);
