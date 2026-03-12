@@ -1,5 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { Layers, Wrench, Gift, Globe } from 'lucide-react';
 import heroBackground from '@/assets/hero-bg.jpg';
 import { aiToolsData } from '@/data/aiToolsData';
 
