@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Globe, DollarSign, Languages } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { getCategoryColor } from '@/data/categoryColors';
 
 interface ToolCardProps {
   tool: {
@@ -20,6 +21,7 @@ interface ToolCardProps {
 export const ToolCard = ({ tool, index }: ToolCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const [imageError, setImageError] = useState(false);
+  const colors = getCategoryColor(tool.category);
 
   const getPricingColor = (pricing: string) => {
     if (pricing.includes('مجاني')) return 'bg-green-500/20 text-green-400 border-green-500/30';
@@ -56,29 +58,28 @@ export const ToolCard = ({ tool, index }: ToolCardProps) => {
       style={{ transformStyle: 'preserve-3d' }}
     >
       <div 
-        className={`
-          relative overflow-hidden
-          bg-card/90 backdrop-blur-xl
-          border border-border/40
-          rounded-3xl
-          transition-all duration-500
-          group cursor-pointer
-          ${isHovered ? 'shadow-2xl' : 'shadow-lg'}
-        `}
+        className="relative overflow-hidden bg-card/90 backdrop-blur-xl border rounded-3xl transition-all duration-500 group cursor-pointer"
         style={{
-          boxShadow: isHovered 
-            ? '0 30px 60px -12px hsl(var(--primary) / 0.4), 0 0 40px hsl(var(--primary) / 0.2)'
-            : '0 10px 25px -5px rgba(0, 0, 0, 0.1)'
+          borderColor: isHovered ? colors.border : 'hsl(var(--border) / 0.4)',
+          boxShadow: isHovered ? colors.shadowHover : '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
         }}
       >
+        {/* Category color top accent bar */}
+        <div 
+          className="absolute top-0 left-0 right-0 h-1 transition-all duration-500"
+          style={{ 
+            background: colors.bgGradient,
+            opacity: isHovered ? 1 : 0.6,
+          }} 
+        />
+
         {/* Animated background gradient */}
         <div 
-          className={`
-            absolute inset-0 
-            bg-gradient-to-br from-primary/10 via-accent/5 to-primary/5
-            opacity-0 transition-all duration-700
-            ${isHovered ? 'opacity-100' : ''}
-          `} 
+          className="absolute inset-0 opacity-0 transition-all duration-700"
+          style={{
+            background: `radial-gradient(circle at 50% 0%, ${colors.bg}, transparent 70%)`,
+            opacity: isHovered ? 1 : 0,
+          }}
         />
 
         {/* Header with logo */}
@@ -97,26 +98,31 @@ export const ToolCard = ({ tool, index }: ToolCardProps) => {
                   onError={() => setImageError(true)}
                 />
               ) : (
-                <div className="w-16 h-16 rounded-2xl shadow-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary">
+                <div 
+                  className="w-16 h-16 rounded-2xl shadow-lg flex items-center justify-center"
+                  style={{ background: colors.bg }}
+                >
+                  <span className="text-2xl font-bold" style={{ color: colors.text }}>
                     {tool.name.charAt(0)}
                   </span>
                 </div>
               )}
               {/* Glow effect behind logo */}
               <div 
-                className={`
-                  absolute inset-0 rounded-2xl
-                  bg-gradient-to-r from-primary/30 to-accent/30
-                  opacity-0 transition-opacity duration-500 -z-10
-                  ${isHovered ? 'opacity-60' : ''}
-                `}
-                style={{ filter: 'blur(15px)' }}
+                className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 -z-10"
+                style={{ 
+                  background: colors.bgGradient,
+                  filter: 'blur(15px)',
+                  opacity: isHovered ? 0.6 : 0,
+                }}
               />
             </motion.div>
             
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
+              <h3 
+                className="text-xl font-bold text-foreground mb-1 transition-colors duration-300"
+                style={{ color: isHovered ? colors.text : undefined }}
+              >
                 {tool.name}
               </h3>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -135,7 +141,15 @@ export const ToolCard = ({ tool, index }: ToolCardProps) => {
         <div className="p-6">
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-6">
-            <Badge variant="secondary" className="text-xs">
+            <Badge 
+              variant="secondary" 
+              className="text-xs border"
+              style={{ 
+                background: colors.bg, 
+                color: colors.text, 
+                borderColor: colors.border 
+              }}
+            >
               {tool.category}
             </Badge>
             <Badge 
@@ -161,7 +175,8 @@ export const ToolCard = ({ tool, index }: ToolCardProps) => {
           >
             <Button 
               asChild
-              className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent text-primary-foreground font-bold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="w-full text-white font-bold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              style={{ background: colors.bgGradient }}
             >
               <a 
                 href={tool.url} 
@@ -178,14 +193,12 @@ export const ToolCard = ({ tool, index }: ToolCardProps) => {
 
         {/* Bottom glow effect */}
         <div 
-          className={`
-            absolute bottom-0 left-1/2 transform -translate-x-1/2
-            w-1/2 h-1 
-            bg-gradient-to-r from-transparent via-primary to-transparent
-            opacity-0 transition-opacity duration-500
-            ${isHovered ? 'opacity-60' : ''}
-          `}
-          style={{ filter: 'blur(8px)' }}
+          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1 transition-opacity duration-500"
+          style={{ 
+            background: `linear-gradient(to right, transparent, ${colors.bgSolid}, transparent)`,
+            filter: 'blur(8px)',
+            opacity: isHovered ? 0.6 : 0,
+          }}
         />
       </div>
     </motion.div>
