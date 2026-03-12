@@ -64,94 +64,87 @@ export const ToolCard = ({ tool, index }: ToolCardProps) => {
           boxShadow: isHovered ? colors.shadowHover : '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
         }}
       >
-        {/* Category color top accent bar */}
+        {/* Hero Image / Preview Section */}
         <div 
-          className="absolute top-0 left-0 right-0 h-1 transition-all duration-500"
-          style={{ 
-            background: colors.bgGradient,
-            opacity: isHovered ? 1 : 0.6,
-          }} 
-        />
-
-        {/* Animated background gradient */}
-        <div 
-          className="absolute inset-0 opacity-0 transition-all duration-700"
+          className="relative h-40 overflow-hidden flex items-center justify-center"
           style={{
-            background: `radial-gradient(circle at 50% 0%, ${colors.bg}, transparent 70%)`,
-            opacity: isHovered ? 1 : 0,
+            background: colors.bgGradient,
           }}
-        />
+        >
+          {/* Decorative pattern overlay */}
+          <div 
+            className="absolute inset-0 opacity-10"
+            style={{
+              backgroundImage: `radial-gradient(circle at 20% 50%, white 1px, transparent 1px), radial-gradient(circle at 80% 20%, white 1px, transparent 1px), radial-gradient(circle at 60% 80%, white 1px, transparent 1px)`,
+              backgroundSize: '60px 60px, 80px 80px, 40px 40px',
+            }}
+          />
+          
+          {/* Floating shapes */}
+          <div 
+            className="absolute top-3 right-3 w-16 h-16 rounded-full opacity-20"
+            style={{ background: `hsla(${(colors.hue + 40) % 360}, 80%, 70%, 0.4)` }}
+          />
+          <div 
+            className="absolute bottom-3 left-3 w-10 h-10 rounded-lg opacity-15 rotate-45"
+            style={{ background: `hsla(${(colors.hue + 60) % 360}, 80%, 70%, 0.5)` }}
+          />
 
-        {/* Header with logo */}
-        <div className="p-6 border-b border-border/30">
-          <div className="flex items-center space-x-4 space-x-reverse mb-4">
-            <motion.div
-              whileHover={{ rotate: 5, scale: 1.1 }}
-              transition={{ duration: 0.3 }}
-              className="relative"
-            >
-              {!imageError ? (
-                <img 
-                  src={tool.logo} 
-                  alt={`${tool.name} Logo`}
-                  className="w-16 h-16 rounded-2xl shadow-lg object-contain bg-background/50 p-2"
-                  onError={() => setImageError(true)}
-                />
-              ) : (
-                <div 
-                  className="w-16 h-16 rounded-2xl shadow-lg flex items-center justify-center"
-                  style={{ background: colors.bg }}
-                >
-                  <span className="text-2xl font-bold" style={{ color: colors.text }}>
-                    {tool.name.charAt(0)}
-                  </span>
-                </div>
-              )}
-              {/* Glow effect behind logo */}
-              <div 
-                className="absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 -z-10"
-                style={{ 
-                  background: colors.bgGradient,
-                  filter: 'blur(15px)',
-                  opacity: isHovered ? 0.6 : 0,
-                }}
+          {/* Centered Logo */}
+          <motion.div
+            whileHover={{ rotate: 5, scale: 1.15 }}
+            transition={{ duration: 0.3 }}
+            className="relative z-10"
+          >
+            {!imageError ? (
+              <img 
+                src={tool.logo} 
+                alt={`${tool.name} Logo`}
+                className="w-20 h-20 rounded-2xl shadow-2xl object-contain bg-white/90 dark:bg-background/90 p-3 backdrop-blur-sm"
+                onError={() => setImageError(true)}
               />
-            </motion.div>
-            
-            <div className="flex-1">
-              <h3 
-                className="text-xl font-bold text-foreground mb-1 transition-colors duration-300"
-                style={{ color: isHovered ? colors.text : undefined }}
+            ) : (
+              <div 
+                className="w-20 h-20 rounded-2xl shadow-2xl flex items-center justify-center bg-white/90 dark:bg-background/90 backdrop-blur-sm"
               >
-                {tool.name}
-              </h3>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Globe className="w-4 h-4" />
-                <span>أداة ذكاء اصطناعي</span>
+                <span className="text-3xl font-black" style={{ color: colors.bgSolid }}>
+                  {tool.name.charAt(0)}
+                </span>
               </div>
-            </div>
-          </div>
+            )}
+          </motion.div>
 
-          <p className="text-muted-foreground text-sm leading-relaxed">
-            {tool.description}
-          </p>
-        </div>
-
-        {/* Content */}
-        <div className="p-6">
-          {/* Tags */}
-          <div className="flex flex-wrap gap-2 mb-6">
+          {/* Category badge on image */}
+          <div className="absolute top-3 left-3">
             <Badge 
-              variant="secondary" 
-              className="text-xs border"
+              className="text-xs border backdrop-blur-md font-semibold"
               style={{ 
-                background: colors.bg, 
-                color: colors.text, 
-                borderColor: colors.border 
+                background: 'hsla(0, 0%, 0%, 0.3)', 
+                color: '#fff', 
+                borderColor: 'hsla(0, 0%, 100%, 0.2)' 
               }}
             >
               {tool.category}
             </Badge>
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="p-5">
+          {/* Title & Description */}
+          <h3 
+            className="text-lg font-bold text-foreground mb-2 transition-colors duration-300"
+            style={{ color: isHovered ? colors.text : undefined }}
+          >
+            {tool.name}
+          </h3>
+
+          <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-2">
+            {tool.description}
+          </p>
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2 mb-4">
             <Badge 
               className={`text-xs border ${getPricingColor(tool.pricing)}`}
               variant="outline"
