@@ -1,5 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useMemo } from 'react';
 import { motion } from 'framer-motion';
+import { Layers, Wrench, Gift, Globe } from 'lucide-react';
 import heroBackground from '@/assets/hero-bg.jpg';
 import { aiToolsData } from '@/data/aiToolsData';
 
@@ -169,12 +170,49 @@ export const Hero3D = () => {
           لتعزيز إنتاجيتك وإطلاق العنان لإبداعك
         </motion.p>
 
+        {/* Stats Section */}
+        <motion.div
+          className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.8 }}
+        >
+          {(() => {
+            const categories = new Set(aiToolsData.map(t => t.category));
+            const freeTools = aiToolsData.filter(t => t.pricing.includes('مجاني')).length;
+            const arabicTools = aiToolsData.filter(t => t.arabic_support === 'نعم').length;
+            const stats = [
+              { icon: Wrench, value: aiToolsData.length, label: 'أداة ذكاء اصطناعي', hue: 325 },
+              { icon: Layers, value: categories.size, label: 'فئة متخصصة', hue: 270 },
+              { icon: Gift, value: freeTools, label: 'أداة مجانية', hue: 140 },
+              { icon: Globe, value: arabicTools, label: 'تدعم العربية', hue: 200 },
+            ];
+            return stats.map((stat, i) => (
+              <motion.div
+                key={stat.label}
+                whileHover={{ scale: 1.08, y: -5 }}
+                className="relative p-4 rounded-2xl backdrop-blur-xl border border-border/20 text-center"
+                style={{
+                  background: `hsla(${stat.hue}, 75%, 55%, 0.08)`,
+                  borderColor: `hsla(${stat.hue}, 75%, 55%, 0.2)`,
+                }}
+              >
+                <stat.icon className="w-5 h-5 mx-auto mb-2" style={{ color: `hsl(${stat.hue}, 85%, 65%)` }} />
+                <div className="text-2xl md:text-3xl font-black" style={{ color: `hsl(${stat.hue}, 85%, 65%)` }}>
+                  {stat.value}+
+                </div>
+                <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+              </motion.div>
+            ));
+          })()}
+        </motion.div>
+
         {/* Creator Credit */}
         <motion.p 
           className="text-lg text-muted-foreground/70 mb-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          transition={{ duration: 1, delay: 1 }}
         >
           by <span className="font-bold text-primary">𝓗𝓪𝓼𝓼𝓪𝓷 𝓼𝓪𝓵𝓶𝓪𝓷</span>
         </motion.p>
